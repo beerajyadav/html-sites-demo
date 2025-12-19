@@ -2,17 +2,17 @@
 
 #### Preview
 
- - [Demo](https://themewagon.github.io/Business/)
+ - [Demo](https://Beeraj.github.io/Business/)
 
 #### Download
- - [Download from ThemeWagon](https://themewagon.com/themes/business/)
+ - [Download from Beeraj](https://Beeraj.com/themes/business/)
  
  
 ## Getting Started
 
 Clone from GitHub 
 ```
-https://github.com/themewagon/Business.git
+https://github.com/Beeraj/Business.git
 ```
 
 ## Author
@@ -24,4 +24,4 @@ Design and code are completely written by Ayro UI's design and development team.
 
  - Design and Code is Copyright &copy; [Ayro UI](https://ayroui.com/)
  - Licensed under [MIT]
- - Distributed by [ThemeWagon](https://themewagon.com)
+ - Distributed by [Beeraj](https://Beeraj.com)
