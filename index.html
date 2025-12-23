@@ -1,49 +1,231 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<title>Landing Pages Index</title>
-	<style>body{font-family:Arial,Helvetica,sans-serif;padding:20px;line-height:1.5}details{margin:12px 0;padding:8px;border:1px solid #ddd;border-radius:4px}summary{font-weight:700;cursor:pointer}ul{margin:8px 0 0 18px}</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collection of portfolio themes and business landing pages">
+    <title>Landing Pages Index | Portfolio & Business Themes</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <style>
+        :root {
+            --primary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        body {
+            background: linear-gradient(to bottom, #f8f9fa 0%, #e9ecef 100%);
+            min-height: 100vh;
+            padding: 3rem 0;
+        }
+
+        .hero-section {
+            background: var(--primary-gradient);
+            color: white;
+            padding: 3rem 0;
+            margin-bottom: 3rem;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .accordion-button:focus {
+            box-shadow: 0 0 0 0.25rem rgba(102, 126, 234, 0.25);
+        }
+
+        .theme-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            margin-bottom: 0.5rem;
+            background: white;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #495057;
+            transition: all 0.3s ease;
+            border: 1px solid #dee2e6;
+        }
+
+        .theme-link:hover {
+            background: var(--primary-gradient);
+            color: white;
+            transform: translateX(8px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+
+        .theme-link i {
+            margin-right: 0.5rem;
+        }
+
+        .badge-count {
+            background: var(--primary-gradient);
+            color: white;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+    </style>
 </head>
+
 <body>
-	<h1>Landing Pages</h1>
-	<p>To view these themes click on the links below. These are portfolio themes.</p>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero-section text-center">
+            <h1 class="display-4 fw-bold mb-3">
+                <i class="bi bi-grid-3x3-gap-fill me-3"></i>Landing Pages Collection
+            </h1>
+            <p class="lead mb-0">
+                Explore our curated collection of portfolio themes and business landing pages
+            </p>
+        </div>
 
-	<details>
-		<summary>Portfolio themes</summary>
-		<ul>
-			<li><a href="civic-master/index.html">civic-master</a></li>
-			<li><a href="clyde-master/index.html">clyde-master</a></li>
-			<li><a href="coach-master/index.html">coach-master</a></li>
-			<li><a href="dominic-master/index.html">dominic-master</a></li>
-			<li><a href="Jessica-1.0.0/index.html">Jessica-1.0.0</a></li>
-			<li><a href="jony-master/index.html">jony-master</a></li>
-			<li><a href="Joyseno-1.0.0/index.html">Joyseno-1.0.0</a></li>
-			<li><a href="Kelly-1.0.0/index.html">Kelly-1.0.0</a></li>
-			<li><a href="maze-master/index.html">maze-master</a></li>
-			<li><a href="noah-master/index.html">noah-master</a></li>
-			<li><a href="phantom-bootstrap-portfolio/index.html">phantom-bootstrap-portfolio</a></li>
-			<li><a href="profile-bootstrap-master/index.html">profile-bootstrap-master</a></li>
-			<li><a href="resume-bootstrap4-master/index.html">resume-bootstrap4-master</a></li>
-			<li><a href="rezume-master/index.html">rezume-master</a></li>
-			<li><a href="satner-master/index.html">satner-master</a></li>
-			<li><a href="timer-bootstrap-portfolio/index.html">timer-bootstrap-portfolio</a></li>
-		</ul>
-	</details>
+        <!-- Main Content -->
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="accordion" id="themesAccordion">
 
-	<details>
-		<summary>Business landing pages</summary>
-		<ul>
-			<li><a href="Business-1.0.0/index.html">Business-1.0.0</a></li>
-			<li><a href="Charitize-1.0.0/index.html">Charitize-1.0.0</a></li>
-			<li><a href="Company-1.0.0/index.html">Company-1.0.0</a></li>
-			<li><a href="legalcare-master/index.html">legalcare-master</a></li>
-			<li><a href="Roofer-1.0.0/index.html">Roofer-1.0.0</a></li>
-			<li><a href="stocker-1.0.0/index.html">stocker-1.0.0</a></li>
-			<li><a href="Travisa-1/index.html">Travisa-1</a></li>
-		</ul>
-	</details>
+                    <!-- Portfolio Themes Section -->
+                    <div class="accordion-item mb-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#portfolioThemes" aria-expanded="true" aria-controls="portfolioThemes">
+                                <i class="bi bi-person-workspace me-2"></i>
+                                Portfolio Themes
+                                <span class="badge badge-count rounded-pill ms-2">16</span>
+                            </button>
+                        </h2>
+                        <div id="portfolioThemes" class="accordion-collapse collapse show"
+                            data-bs-parent="#themesAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="civic-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Civic Master
+                                        </a>
+                                        <a href="clyde-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Clyde Master
+                                        </a>
+                                        <a href="coach-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Coach Master
+                                        </a>
+                                        <a href="dominic-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Dominic Master
+                                        </a>
+                                        <a href="Jessica-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Jessica 1.0.0
+                                        </a>
+                                        <a href="jony-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Jony Master
+                                        </a>
+                                        <a href="Joyseno-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Joyseno 1.0.0
+                                        </a>
+                                        <a href="Kelly-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Kelly 1.0.0
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="maze-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Maze Master
+                                        </a>
+                                        <a href="noah-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Noah Master
+                                        </a>
+                                        <a href="phantom-bootstrap-portfolio/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Phantom Bootstrap Portfolio
+                                        </a>
+                                        <a href="profile-bootstrap-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Profile Bootstrap Master
+                                        </a>
+                                        <a href="resume-bootstrap4-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Resume Bootstrap 4 Master
+                                        </a>
+                                        <a href="rezume-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Rezume Master
+                                        </a>
+                                        <a href="satner-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Satner Master
+                                        </a>
+                                        <a href="timer-bootstrap-portfolio/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Timer Bootstrap Portfolio
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Business Landing Pages Section -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#businessPages" aria-expanded="false" aria-controls="businessPages">
+                                <i class="bi bi-briefcase-fill me-2"></i>
+                                Business Landing Pages
+                                <span class="badge badge-count rounded-pill ms-2">7</span>
+                            </button>
+                        </h2>
+                        <div id="businessPages" class="accordion-collapse collapse" data-bs-parent="#themesAccordion">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="Business-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Business 1.0.0
+                                        </a>
+                                        <a href="Charitize-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Charitize 1.0.0
+                                        </a>
+                                        <a href="Company-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Company 1.0.0
+                                        </a>
+                                        <a href="legalcare-master/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Legalcare Master
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="Roofer-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Roofer 1.0.0
+                                        </a>
+                                        <a href="stocker-1.0.0/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Stocker 1.0.0
+                                        </a>
+                                        <a href="Travisa-1/index.html" class="theme-link">
+                                            <i class="bi bi-box-arrow-up-right"></i>Travisa 1
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center mt-5 pt-4 text-muted">
+            <p class="mb-0">
+                <i class="bi bi-collection-fill me-2"></i>
+                Total Themes: <strong>23</strong> | Portfolio: <strong>16</strong> | Business: <strong>7</strong>
+            </p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
